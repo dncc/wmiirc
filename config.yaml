@@ -196,18 +196,11 @@ control:
     left:    h
     right:   l
     root:    Mod4-
-    send:    ${root}Shift-
-    size:    ${root}Control-
-    swap:    ${root}w,
-    view:    ${root}v,
-    group:   ${root}g,
-    layout:  ${root}z,
-
-  keyboard_action:
-    XF86Display:              display_negative
-    XF86Sleep:                system_hibernate
-
-    ${root}x:                 launch_terminal
+    up:      t
+    down:    n
+    left:    h
+    right:   s
+    root:    Mod1-
     ${root}c:                 launch_browser
     #${root}j:                 launch_filer
     ${root}e:                 launch_editor
