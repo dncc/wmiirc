@@ -2,7 +2,9 @@
 # http://blueprintcss.org/tests/parts/forms.html
 display:
   color:
-    info:     "#205791 #D5EDF8 #92CAE4"
-    error:    "#8A1F11 #FBE3E4 #FBC2C4"
-    notice:   "#514721 #FFF6BF #FFD324"
-    success:  "#264409 #E6EFC2 #C6D880"
+    info:       "#205791 #D5EDF8 #92CAE4"
+    error:      "#8A1F11 #FBE3E4 #FBC2C4"
+    notice:     "#514721 #FFF6BF #FFD324"
+    success:    "#264409 #E6EFC2 #C6D880"
+    redfocus:   "#000d18 #E7756B #4f4f4f"
+    greenfocus: "#000d18 #94E352 #4f4f4f"

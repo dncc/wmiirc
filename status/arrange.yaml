@@ -77,7 +77,7 @@ status:
       end
 
     label: |
-      ["\u22C8", current]
+      ["\u259E", current] #22C8
 
     control:
       action:

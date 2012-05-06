@@ -2,6 +2,6 @@
 # http://slinky.imukuppi.org/zenburn/
 display:
   color:
-    desktop:  "#333333" # VisualNOS
+    desktop:  "#556E45" # VisualNOS
     focus:    "#000d18 #8faf9f #4f4f4f" # Cursor, Cursor, CursorColumn
     normal:   "#dcdccc #3f3f3f #434443" # Normal, CursorLine

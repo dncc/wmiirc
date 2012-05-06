@@ -41,9 +41,9 @@ class Config < Hash
   end
 
   def display
-    font   = ENV['WMII_FONT']        = self['display']['font']
-    focus  = ENV['WMII_FOCUSCOLORS'] = self['display']['color']['focus']
-    normal = ENV['WMII_NORMCOLORS']  = self['display']['color']['normal']
+    font    = ENV['WMII_FONT']        = self['display']['font']
+    focus   = ENV['WMII_FOCUSCOLORS'] = self['display']['color']['focus']
+    normal  = ENV['WMII_NORMCOLORS']  = self['display']['color']['normal']
 
     settings = {
       'font'        => font,

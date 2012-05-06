@@ -90,8 +90,9 @@ status:
       end
 
     label: |
-      color = 'notice' if mute?
-      [color, "\u266B", level]
+      color = mute? ? 'notice' : 'redfocus'
+      pic   = mute? ? "\u266A" : "\u266A"
+      [color, pic, level]
 
     control:
       action:

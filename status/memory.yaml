@@ -4,6 +4,7 @@ require:
 status:
   memory:
     params:
+      high: 85
 
     script: |
       case ::RbConfig::CONFIG['host_os']
@@ -29,7 +30,14 @@ status:
     label: |
       sample!
       used_percent = ((@used.to_f / (@used.to_f + @free.to_f)) * 100).round
-      ["mem #{used_percent}% \u25CC #{@free}M",
+
+      color = 
+        case [used_percent, @high].min
+        when @high then :error
+        else :greenfocus
+        end
+
+      [ color, "mem #{used_percent}% \u25CC #{@free}M",
        ("\u25C9 #{@swap}M" if @swap.to_f > 0)]
 
     control:
